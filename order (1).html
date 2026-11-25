@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า — Honey Hungry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Honey Hungry</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container--narrow">
+        <div class="section-head text-center">
+          <span class="eyebrow">Order</span>
+          <h1 style="font-size: clamp(1.8rem, 4vw, 2.6rem);">สั่งซื้อสินค้า</h1>
+          <hr class="divider">
+          <p class="lead">กรอกข้อมูลด้านล่าง เราจะติดต่อกลับเพื่อยืนยันคำสั่งซื้อ</p>
+        </div>
+
+        <form id="orderForm" class="panel">
+          <div class="form-group">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input type="text" id="customerName" name="customerName" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input type="text" id="contact" name="contact" required autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="items">รายการสินค้า</label>
+            <input type="text" id="items" name="items" required>
+          </div>
+
+          <div class="form-group">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input type="text" id="total" name="total" inputmode="numeric" required>
+          </div>
+
+          <div class="form-group">
+            <label for="note">หมายเหตุ</label>
+            <textarea id="note" name="note" placeholder="เช่น ที่อยู่จัดส่ง หรือข้อความเพิ่มเติม"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--solid btn--block">ยืนยันสั่งซื้อ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand">Honey Hungry</span>
+          <p class="mt-4 mb-0">น้ำผึ้งแท้ 100% ห้ารสชาติ</p>
+        </div>
+        <div>
+          <h4>เมนู</h4>
+          <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้า</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Honey Hungry</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

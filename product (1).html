@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด — Honey Hungry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Honey Hungry</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" class="active">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="eyebrow">Collection</span>
+          <h1 style="font-size: clamp(1.8rem, 4vw, 2.6rem);">สินค้าทั้งหมด</h1>
+          <hr class="divider">
+        </div>
+
+        <!-- script.js สร้างปุ่มกรอง mood ที่นี่ -->
+        <div id="filter-bar" class="filters"></div>
+
+        <!-- script.js สร้างการ์ดสินค้าที่นี่ -->
+        <div id="product-list" class="grid grid--3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand">Honey Hungry</span>
+          <p class="mt-4 mb-0">น้ำผึ้งแท้ 100% ห้ารสชาติ</p>
+        </div>
+        <div>
+          <h4>เมนู</h4>
+          <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้า</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Honey Hungry</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
